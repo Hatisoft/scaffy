@@ -1,0 +1,27 @@
+{
+  "name": "scaffy",
+  "version": "0.0.1",
+  "description": "an incremental scaffolding tool",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hatisoft/scaffy.git"
+  },
+  "keywords": [
+    "scaffolding",
+    "incremental",
+    "project"
+  ],
+  "author": "kanekotic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hatisoft/scaffy/issues"
+  },
+  "homepage": "https://github.com/Hatisoft/scaffy#readme",
+  "preferGlobal": true,
+  "bin":{
+    "scaffy": "bin/scaffy.js"
+  }
+}
