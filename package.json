@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/Hatisoft/scaffy#readme",
   "preferGlobal": true,
-  "bin":{
+  "bin": {
     "scaffy": "bin/scaffy.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "gist-get": "^2.0.0"
   }
 }
