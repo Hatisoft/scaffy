@@ -15,9 +15,9 @@ var actionMap = {
 }
 
 var retrieveMap = {
-    "gist": (scaffold) => add(scaffold),
-    "local": (scaffold) => remove(scaffold),
-    "server": (scaffold) => search(scaffold)
+    "gist": (scaffold) => gist(scaffold),
+    "local": (scaffold) => local(scaffold),
+    "server": (scaffold) => server(scaffold)
 }
 
 program
@@ -25,13 +25,13 @@ program
     .option('-o, --origin <origin>', 'the type of origin of the scafflod are gist, local, and server')
     .action(function(mode, scaffolds) {
         if(!program.origin)
-            program.origin = local
+            program.origin = 'local'
         if(!actionMap[mode])
             error(mode + ': command not supported')
         if (!retrieveMap[program.origin])
             error(program.origin + ': origin not supported')
         
-        var schaffoldFiles = retrieveMap[program.origin](scaffolds);
+        var scaffoldFiles = retrieveMap[program.origin](scaffolds);
         actionMap[mode](schaffoldFiles);
     })
     .parse(process.argv);

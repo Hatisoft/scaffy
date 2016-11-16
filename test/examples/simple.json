@@ -1,0 +1,27 @@
+{
+    "macrosMap":{
+
+    },
+    "package":{
+        "dependencies":{
+
+        },
+        "devDependencies":{
+
+        },
+        "scripts":{
+
+        }
+    },
+    "files":{
+        "entrypoint":{
+
+        },
+        "others":[
+            {
+                "path":"",
+                "content":""
+            }
+        ]
+    }
+}
